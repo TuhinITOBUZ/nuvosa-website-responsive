@@ -1,0 +1,81 @@
+li {
+  font-size: 14px;
+}
+
+p {
+  color: #727272;
+}
+
+.navbar-dot-design {
+  background-color: #bc424e;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin: 4px 0 0 -12px;
+}
+
+.navbar-logo img {
+  width: 15px;
+  margin: 0 5px;
+}
+
+.navbar-logo {
+  background-color: #fad725;
+  height: 100%;
+  margin-top: 1rem;
+
+}
+
+.page-banner {
+  background-image: url("../images/pageBanner/bannerBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.page-banner-expert-logo {
+  bottom: 0;
+  right: 1rem;
+  width: 20%;
+}
+
+.page-banner button {
+  background-color: #FAD725;
+  border: none;
+}
+
+.card {
+  border: none !important;
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 780px) {}
+
+@media screen and (min-width: 960px) {
+  .navbar-logo {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  .page-banner {
+    flex-direction: row;
+  }
+
+  .page-banner-expert-logo {
+    width: 20%;
+    right: 5.5rem;
+  }
+
+  .page-banner-details {
+    width: 70%;
+    padding: 5rem 0 5rem 7rem;
+  }
+}
+
+@media screen and (min-width: 1290px) {}
+
+@media screen and (min-width: 1440px) {}
