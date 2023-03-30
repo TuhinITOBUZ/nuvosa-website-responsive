@@ -6,6 +6,18 @@ p {
   color: #727272;
 }
 
+.violet-color {
+  color: #6F77F1;
+}
+
+.width-85 {
+  width: 85%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
 .navbar-dot-design {
   background-color: #bc424e;
   border-radius: 50%;
@@ -43,12 +55,140 @@ p {
 .page-banner button {
   background-color: #FAD725;
   border: none;
+  margin: 1rem;
 }
 
 .card {
   border: none !important;
   box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
   border-radius: 5px;
+}
+
+.optimising-website-card {
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.optimising-website-card-details {
+  padding-top: 5rem;
+}
+
+.business {
+  background-color: #F2F2F2;
+  flex-direction: column;
+}
+
+.business>div>button {
+  background-color: #FAD725;
+  border: none;
+}
+
+.choosing-us button {
+  background-color: #FAD725;
+  border: none;
+}
+
+.mac-book-image {
+  width: 85%;
+  padding: 2rem 0 2rem 0 !important;
+}
+
+.choosing-us .card {
+  height: 45vh;
+}
+
+.seo {
+  flex-direction: column;
+}
+
+.milestones-achieved>div {
+  border: 1px solid #E1E1E1;
+  flex-direction: column;
+}
+
+.website-speed {
+  flex-direction: column;
+}
+
+.website-speed button {
+  background-color: #FAD725;
+  border: none;
+}
+
+.website-speed input {
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.plans {
+  background-color: #FAFAFA;
+}
+
+.plan-details {
+  flex-direction: column;
+}
+
+.plans-card button {
+  background: none;
+  border: 1px solid black;
+}
+
+.plans-special-card {
+  background-image: url("/images/plans/cardBackground.svg");
+  background-size: cover;
+  height: fit-content;
+  width: fit-content;
+}
+
+.plans-special-card button {
+  background-color: #FAD725;
+  border: none;
+  width: 50%;
+}
+
+.optimising-website {
+  padding: 7rem 0 7rem 0;
+}
+
+.plans-card:hover,
+.plans-special-card:hover {
+  transition: all .2s ease-in-out;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.our-team-cards {
+  flex-direction: column;
+}
+
+.our-team-card {
+  background-color: white;
+  border: 1px solid #EFEFEF;
+  padding: 1.5rem;
+}
+
+.our-team-special-card {
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+  padding: 1.5rem;
+}
+
+.subscribe {
+  background-color: #FAFAFA;
+}
+
+.subscribe-form {
+  flex-direction: column;
+}
+
+.subscribe-form input {
+  width: 35%;
+  border: 1px solid #C3C6D0;
+}
+
+.subscribe-form button {
+  color: white;
+  background-color: #6F77F1;
+  border: none;
 }
 
 @media screen and (min-width: 600px) {}
@@ -74,8 +214,63 @@ p {
     width: 70%;
     padding: 5rem 0 5rem 7rem;
   }
+
+  .business {
+    flex-direction: row;
+  }
+
+  .mac-book-image {
+    width: 40%;
+    padding: 4rem 8rem 4rem 0 !important;
+  }
+
+  .business>div {
+    padding: 4rem 0 4rem 8rem !important;
+  }
+
+  .milestones-achieved>div {
+    flex-direction: row;
+  }
+
+  .website-speed {
+    flex-direction: row;
+  }
+
+  .website-speed>div {
+    padding: 4rem 0 4rem 8rem;
+  }
+
+  .website-speed img {
+    width: 40%;
+  }
+
+  .plan-details {
+    flex-direction: row;
+  }
+
+  .our-team-cards {
+    flex-direction: row;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+  }
 }
 
-@media screen and (min-width: 1290px) {}
+@media screen and (min-width: 1290px) {
+  .seo {
+    flex-direction: row;
+  }
+
+  .seo>img {
+    width: 50%;
+    padding: 6rem;
+  }
+
+  .plans-special-card {
+    height: 50vh;
+    width: 30vw;
+  }
+}
 
 @media screen and (min-width: 1440px) {}
