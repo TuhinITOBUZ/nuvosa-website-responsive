@@ -181,7 +181,7 @@ p {
 }
 
 .subscribe-form input {
-  width: 35%;
+  width: 130%;
   border: 1px solid #C3C6D0;
 }
 
@@ -189,6 +189,20 @@ p {
   color: white;
   background-color: #6F77F1;
   border: none;
+}
+
+.footer-dot-design {
+  background-color: #bc424e;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  padding: 4px;
+  margin: 4px 0 0 0;
+}
+
+.footer-details {
+  flex-direction: column;
+  gap: .5rem;
 }
 
 @media screen and (min-width: 600px) {}
@@ -254,6 +268,16 @@ p {
 
   .subscribe-form {
     flex-direction: row;
+  }
+
+  .subscribe-form input {
+    width: 35%;
+    border: 1px solid #C3C6D0;
+  }
+
+  .footer-details {
+    flex-direction: row;
+    gap: 3rem;
   }
 }
 
