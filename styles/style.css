@@ -39,9 +39,16 @@ p {
 
 .navbar-logo {
   background-color: #fad725;
-  height: 100%;
   margin-top: 1rem;
+}
 
+.navbar-logo:hover {
+  scale: 1.2;
+}
+
+.navbar-lets-talk:hover {
+  background-color: #FAD725;
+  columns: #ffffff;
 }
 
 .page-banner {
@@ -49,25 +56,39 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  flex-direction: column;
 }
 
 .page-banner-expert-logo {
-  bottom: 0;
-  right: 20%;
-  width: 20%;
+  width: 40%;
 }
 
 .page-banner button {
   background-color: #FAD725;
   border: none;
   margin: 1rem;
+  padding: 1rem;
+}
+
+.page-banner button:hover,
+.business-section button:hover,
+.card button:hover,
+.website-speed button:hover {
+  transition: all .2s ease-in-out;
+  background-color: #6F77F1;
+  color: #EFEFEF;
+  scale: 1.1;
 }
 
 .card {
   border: none !important;
-  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
   border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
+  cursor: pointer;
+  scale: 1.1;
+  transition: all .2s ease-in-out;
 }
 
 .optimising-website-card {
@@ -79,10 +100,18 @@ p {
   padding-top: 5rem;
 }
 
+.optimising-website-card:hover {
+  border-bottom: #6F77F1 2px solid !important;
+  cursor: pointer;
+  scale: 1.1;
+  transition: all .2s ease-in-out;
+}
+
 .business-section {
   background-color: #FAFAFA;
   flex-direction: column;
 }
+
 
 .business-section>div>button,
 .choosing-us button,
@@ -98,7 +127,7 @@ p {
 }
 
 .choosing-us .card {
-  height: 45vh;
+  padding: 5rem 0 !important;
 }
 
 .seo-section {
@@ -133,11 +162,16 @@ p {
   border: 1px solid black;
 }
 
-.plans-special-card {
-  background-image: url("/images/plans/cardBackground.svg");
-  background-size: cover;
-  height: fit-content;
-  width: fit-content;
+.plans-card:hover {
+  background-color: #6F77F1;
+  border-radius: 5px;
+  color: #ffffff !important;
+}
+
+.plans-card button:hover {
+  background-color: #FAD725;
+  color: black;
+  border: none;
 }
 
 .plans-special-card button {
@@ -204,11 +238,8 @@ p {
 }
 
 .footer-copyright-section {
+  font-size: 10px;
   flex-direction: column;
-}
-
-.footer-copyright-section>div {
-  top: 4rem;
 }
 
 .slider-card {
@@ -235,6 +266,17 @@ p {
   cursor: pointer;
 }
 
+@media screen and (min-width:600px) {
+
+  .page-banner-expert-logo {
+    width: 25%;
+  }
+
+  .page-banner-image {
+    width: 40vw;
+  }
+}
+
 @media screen and (min-width: 960px) {
 
   .navbar-logo {
@@ -242,13 +284,8 @@ p {
     margin-left: 1rem;
   }
 
-  .page-banner {
-    flex-direction: row;
-  }
-
   .page-banner-expert-logo {
     width: 20%;
-    right: 15%;
   }
 
   .page-banner-details {
@@ -309,11 +346,6 @@ p {
 
   .footer-copyright-section {
     flex-direction: row;
-  }
-
-  .footer-copyright-section>div {
-    right: 0;
-    top: 0;
   }
 
   .slider-card {

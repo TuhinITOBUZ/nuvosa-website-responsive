@@ -1,4 +1,5 @@
 const slides = document.querySelectorAll(".slider-card")
+const planCards = document.querySelectorAll(".plans-card")
 let slideCounter = 0
 
 if (window.innerWidth < 960) {
@@ -41,3 +42,7 @@ const slideSliderImage = () => {
     slide.style.transform = `translateX(-${slideCounter * 100}%)`;
   });
 };
+
+planCards.forEach(planCard => {
+  planCard.style.color = "#ffffff"
+})
