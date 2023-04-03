@@ -171,7 +171,7 @@ p {
 .plans-card button:hover {
   background-color: #FAD725;
   color: black;
-  border: none;
+  /* border: none; */
 }
 
 .plans-special-card button {
