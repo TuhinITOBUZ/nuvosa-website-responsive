@@ -43,25 +43,3 @@ const slideSliderImage = () => {
     slide.style.transform = `translateX(-${slideCounter * 100}%)`;
   });
 };
-
-// planCards.forEach(planCard => {
-//   planCard.addEventListener("mouseover", () => {
-//     planCard.style.backgroundColor = "#6f77f1";
-//     planCardElements.forEach(element => {
-//       element.style.color = "#ffffff"
-//     })
-//   })
-// })
-
-// planCards.forEach(planCard => {
-//   planCard.addEventListener("mouseout", () => {
-//     planCard.style.backgroundColor = "#ffffff";
-//     planCardElements.forEach(element => {
-//       element.style.color = "#727272"
-//     })
-//   })
-// })
-
-// function applyEffect(x) {
-//   x.style.color = "#ffffff"
-// }
