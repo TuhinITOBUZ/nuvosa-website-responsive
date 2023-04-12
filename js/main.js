@@ -1,6 +1,4 @@
 const slides = document.querySelectorAll(".slider-card");
-const planCards = document.querySelectorAll(".plans-card");
-const planCardElements = document.querySelectorAll(".white-color");
 let slideCounter = 0;
 
 if (window.innerWidth < 960) {
